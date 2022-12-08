@@ -1,10 +1,10 @@
 #Set up user specific variables
-APPNAME=myApp
+APPNAME=ist-iac-spike
 # RG=myAksClusterResourceGroup  # Uncomment only if you are assigning permissions at the Resource Group level
-GHORG=Azure
-GHREPO=aks-baseline-automation
+GHORG=rajkalemsft
+GHREPO=ist-iac-dev
 GHBRANCH=main
-GHENV=prod
+GHENV=devspike
 
 # Login to your subscription. When prompted for credentials, select a user account who has permission to register applications in Azure AD 
 az login --use-device-code 

@@ -9,6 +9,22 @@ This repository uses a script to provide a simple way to create a GitHub OIDC fe
 
 The script will create a new application, assign the correct Azure RBAC permissions for the Subscription **OR** Resource Group containing your AKS cluster, and create Federated Identity Credentials for both an environment and branch.
 
+- Update below values in the script,
+        
+        - APPNAME --> Azure AD application name to be created for workflow auth.
+        - RG --> AKS cluster resource group name. Uncomment only if you are assigning permissions at the Resource Group level
+        - GHORG --> Git hub Org name for the current repository
+        - GHREPO --> GitHub repository name.
+        - GHBRANCH --> GitHub branch name.
+        - GHENV --> GitHub environment name from devspike
+
+- Here's what to exepect on execution,
+        - You will be asked to login to Azure.
+        - Towards the end of the successful execution, you will be given three values which are used to configure environment on GitHub repository,
+            1. AZURE_CLIENT_ID --> ClientId of the Azure AD application specified above (APPNAME)
+            2. AZURE_TENANT_ID --> TenantId for Azure Subscription
+            3. AZURE_SUBSCRIPTION_ID --> Azure subscription Id.
+
 > The script requires AZ CLI >= 2.37
 
 ```bash
