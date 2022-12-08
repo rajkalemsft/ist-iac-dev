@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus2"
+        },
+        "clusterAdminAadGroupObjectId": {
+            "value": "c542b993-4e3e-43ee-b25b-1f3275919489"
+        },
+        "a0008NamespaceReaderAadGroupObjectId": {
+            "value": "c6f78afa-7bf2-45f1-a852-0f7bf2e1b75e"
+        },
+        "domainName": {
+            "value": "contoso.com"
+        },
+        "kubernetesVersion": {
+            "value": "1.23.8"
+        },
+        "gitOpsBootstrappingRepoHttpsUrl": {
+            "value": "https://github.com/rajkalemsft/aks-baseline-automation"
+        },
+        "gitOpsBootstrappingRepoBranch": {
+            "value": "main"
+        }
+    }
+}
