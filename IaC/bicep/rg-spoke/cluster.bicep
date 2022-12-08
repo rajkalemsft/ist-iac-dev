@@ -68,7 +68,7 @@ param gitOpsBootstrappingRepoBranch string
 // var clusterReaderRoleId = '7f6c6a51-bcf8-42ba-9220-52d62157d7db'
 // var serviceClusterUserRoleId = '4abbcc35-e782-43d8-92c5-2d3f1bd2253f'
 var subRgUniqueString = uniqueString('aks', subscription().subscriptionId, resourceGroupName, location)
-var nodeResourceGroupName = 'rg-${clusterName}-nodepools-automation'
+var nodeResourceGroupName = 'rg-${clusterName}-nodepools'
 var clusterName = 'aks-${subRgUniqueString}'
 var logAnalyticsWorkspaceName = 'la-${clusterName}'
 var defaultAcrName = 'acraks${subRgUniqueString}'
