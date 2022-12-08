@@ -18,7 +18,7 @@
             "value": "1.23.8"
         },
         "gitOpsBootstrappingRepoHttpsUrl": {
-            "value": "https://github.com/rajkalemsft/aks-baseline-automation"
+            "value": "https://github.com/rajkalemsft/ist-iac-dev"
         },
         "gitOpsBootstrappingRepoBranch": {
             "value": "main"
